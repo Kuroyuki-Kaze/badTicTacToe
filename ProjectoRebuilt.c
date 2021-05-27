@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
 #define true 1
+#define EXIT_SUCCESS 0
 
 int main() {
     //Initial board
@@ -53,7 +53,7 @@ int main() {
 
                 //ValueError: Index out of range error handling
                 else if (row < 1 || row > 3) {
-                    printf("Row or column is not in the valid range!\n\n");
+                    printf("Row is not in the valid range!\n\n");
                     printf("Enter row again: ");
                     row = 0;
                     arg1a = scanf("%d", &row);
@@ -87,7 +87,7 @@ int main() {
 
                 //ValueError: Index out of bounds handling
                 else if (column < 1 || column > 3) {
-                    printf("Row or column is not in the valid range!\n\n");
+                    printf("Column is not in the valid range!\n\n");
                     printf("Enter column again: ");
                     column = 0;
                     arg1b = scanf("%d", &column);
@@ -241,7 +241,7 @@ int main() {
 
                 //ValueError: Index out of bounds error handling
                 else if (row < 1 || row > 3) {
-                    printf("Row or column is not in the valid range!\n");
+                    printf("Row is not in the valid range!\n");
                     printf("Enter row again: ");
                     row = 0;
                     arg2a = scanf("%d", &row);
@@ -276,7 +276,7 @@ int main() {
 
                 //ValueError: Index out of bounds error handling
                 else if (column < 1 || column > 3) {
-                    printf("Row or column is not in the valid range!\n");
+                    printf("Column is not in the valid range!\n");
                     printf("Enter column again: ");
                     column = 0;
                     arg2b = scanf("%d", &column);
@@ -397,5 +397,5 @@ int main() {
     }
 
     //Game end
-    return 0;
+    return EXIT_SUCCESS;
 }
