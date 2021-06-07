@@ -207,8 +207,12 @@ int main() {
             break;
         }
 
+
+        //--------------------------------------------------------------------------------------------------------------
+
+
         //Player 2
-        printf("Player 2's turn:\n");
+        printf("\nPlayer 2's turn:\n");
         printf("Board:\n\n");
         printf("-------------\n| %c | %c | %c |\n-------------\n| %c | %c | %c |\n-------------\n| %c | %c | %c |\n-------------\n\n", a, b, c, d, e, f, g, h, i);
         
@@ -232,7 +236,7 @@ int main() {
 
                 //TypeError handling
                 if (arg2a != 1) {
-                    printf("Bad input!\n");
+                    printf("Bad input!\n\n");
                     scanf("%*[^\n]");
                     scanf("%*c");
                     printf("Enter row again: ");
@@ -241,7 +245,7 @@ int main() {
 
                 //ValueError: Index out of bounds error handling
                 else if (row < 1 || row > 3) {
-                    printf("Row is not in the valid range!\n");
+                    printf("Row is not in the valid range!\n\n");
                     printf("Enter row again: ");
                     row = 0;
                     arg2a = scanf("%d", &row);
