@@ -17,7 +17,9 @@ void try_to_win(char **board) {
     else if (board[2][0] == 32) {
         board[2][0] == 79;
     }
-    else if (board[0][2] == 32 && board[1][1])
+    else if (board[0][2] == 32 && board[1][1]) {
+        board[1][1] == 79;
+    }
 }
 
 //Function to check the win codition
